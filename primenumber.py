@@ -1,8 +1,8 @@
 from math import sqrt
 
 def producePrimes(num):
-    numbers_types = (int, float, complex)
-    if isinstance(num, numbers_types):
+    
+    if isinstance(num, (int, float, complex)):
         if num >= 3:
             prime_list = []
             prime_list.append(2)
