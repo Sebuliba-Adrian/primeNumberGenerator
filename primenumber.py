@@ -1,7 +1,7 @@
 from math import sqrt
 
 def producePrimes(num):
-    
+
     if isinstance(num, (int, float, complex)):
         if num >= 3:
             prime_list = []
@@ -9,8 +9,7 @@ def producePrimes(num):
             nextPrime = 3
             while nextPrime < num:
                 isPrime = True
-                sqrt_value = sqrt(nextPrime)
-                sample_range = [i for i in prime_list if i <= sqrt_value]
+                sample_range = [i for i in prime_list if i <= sqrt(nextPrime)]
                 for i in sample_range:
                     if nextPrime%i == 0:
                         isPrime = False
